@@ -10,6 +10,58 @@
 <link href="home.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 <!--
+
+.btn {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.375rem;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
 a:link {
 	color: #000;
 	text-decoration: none;
@@ -82,11 +134,40 @@ hr {
     			<td width="730" height="100%" valign="top">
                
                <div class="cim_research">PCD-hub: Protein Condensation Diseases resource</div>
-               <div class="research15"></br>We performed a systematic analysis of more than 20,000 human diseases and ranked them based on their association with genes (DisGeNet database) that encode known droplet-forming proteins  and with disease-associated missense mutations (HuVarBase) in known components of membraneless organelles. By comparing contributions from genes encoding condensate-forming proteins with those whose missense mutations affect native structures, we identified over 5000 human disorders, where protein condensation could be expected to have a causative nature. This list includes about 2000 orphan disorders linked with the dysfunction of multiple pathways.</br></br>
+               <div class="research15">
+                   <br>
+                   We performed a systematic analysis of more than 20,000 human diseases and ranked them based on their association with genes (DisGeNet database) that encode known droplet-forming proteins  and with disease-associated missense mutations (HuVarBase) in known components of membraneless organelles. By comparing contributions from genes encoding condensate-forming proteins with those whose missense mutations affect native structures, we identified over 5000 human disorders, where protein condensation could be expected to have a causative nature. This list includes about 2000 orphan disorders linked with the dysfunction of multiple pathways.</br></br>
                We expect that the identification and understanding of the nature of protein condensation diseases that we report will promote the development of effective therapeutic strategies for their screening and treatment.
-               </br></div>
-               </br><hr align="left" width=730></br>
-                
+               <br>
+                   <h4>
+                       Ranking of human diseases based on their links with genes encoding
+                       droplet-forming proteins.
+                   </h4>
+                   <p>
+                       <a class="btn btn-primary"  style="color: white"  href="https://github.com/fuxreiterlab/fuxreiterlab.github.io/raw/main/Table_S2.xlsx" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                           <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                           <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                       </svg> Download </a>
+                   </p>
+                   <h4>
+                       Disease-associated missense mutations in droplet-promoting regions of
+                       experimentally identified droplet-forming proteins (Sheet 1) and diseases ranked by
+                       the contribution of missense mutations in droplet-promoting regions (Sheet 2).
+                   </h4>
+                   <p>
+                       <a class="btn btn-primary" style="color: white" href="https://github.com/fuxreiterlab/fuxreiterlab.github.io/raw/main/Table_S3.xlsx" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                           <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                           <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                       </svg> Download</a>
+                   </p>
+               </div>
+
+
+
+
+
+
+
                 </br></br>
                 
        		  </td>
